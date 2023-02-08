@@ -158,3 +158,24 @@ body {
 }
 
 /*Intro styles end*/
+
+/* Benefits styles start*/
+.benefits__wrap {
+  max-width: 1262px;
+  background: #fff;
+  margin: 0 auto;
+  box-shadow: 0px 2px 20px;
+}
+
+.benefits__title {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 42px;
+  padding: 93px 100px 88px 100px;
+}
+
+.benefits__cards {
+  height: 35vh;
+}
+
+/*Benefits styles end*/
