@@ -68,6 +68,8 @@ body {
 img {
   max-width: 100%;
   height: auto;
+  object-fit: cover;
+  object-position: center;
 }
 
 .header__list {
@@ -171,7 +173,7 @@ fieldset {
 /* Benefits styles start*/
 
 .benefits {
-  margin-bottom: 131px;
+  padding-bottom: 131px;
 }
 .benefits__wrap {
   max-width: 1262px;
