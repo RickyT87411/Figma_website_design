@@ -355,11 +355,13 @@ fieldset {
 .places__card_size_sm {
   height: 283px;
   object-fit: cover;
+  width: 100%;
 }
 
 .places__card-pick_size_lg {
   height: 354px;
   object-fit: cover;
+  width: 100%;
 }
 
 /* Places styles end*/
