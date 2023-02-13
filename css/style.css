@@ -50,6 +50,28 @@ body {
   margin: 0 auto;
 }
 
+.wrapper-full {
+  max-width: 1262px;
+  margin: 0 auto;
+}
+.sectoin-title {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 42px;
+  padding-bottom: 10px;
+  position: relative;
+}
+.section-title::after {
+  /* должна была появиться синяя полоска под заголовком*/
+  display: block;
+  content: "";
+  width: 253px;
+  height: 3px;
+  background-color: #006dfe;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
 /*Header styles start*/
 
 .header {
@@ -109,6 +131,7 @@ img {
   background: url("../image/Hero.jpg") no-repeat center;
   background-size: cover;
   padding-top: 263px;
+  padding-bottom: 233px;
 }
 .intro__title {
   font-weight: 500;
@@ -170,6 +193,15 @@ fieldset {
   background: rgb(108, 160, 228);
 }
 
+.benefits__card-more {
+  background: url("./img/Shape.svg") no-repeat right center;
+  padding: 54px;
+}
+.benefits__card-more:hover,
+.benefits__card-more:focus,
+.benefits__card-more:active {
+  opacity: 0.75;
+}
 /*Intro styles end*/
 
 /* Benefits styles start*/
@@ -241,3 +273,93 @@ fieldset {
 }
 
 /*Benefits styles end*/
+
+/*Pleces styles start*/
+
+.places {
+  padding-bottom: 131px;
+}
+
+.places__caption {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+
+.places__title {
+  margin-right: 15px;
+}
+
+.places__view-all {
+  font-size: 16px;
+  color: #006dfe;
+  text-decoration: none;
+  background: url("./img/Shape.svg") no-repeat right center;
+  padding-right: 59px;
+}
+.places__view-all:hover,
+.places__view-all:focus,
+.places__view-all:active {
+  opacity: 0.65;
+}
+
+.places__cards {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+}
+.places__card {
+  position: relative;
+  overflow: hidden;
+}
+
+.places__card:hover .places__card-pick {
+  transform: scale(1.05);
+}
+
+.places__card-title {
+  font-size: 50px;
+  line-height: 60px;
+  color: white;
+  position: absolute;
+  bottom: 27px;
+  left: 29px;
+  z-index: 3;
+}
+.places__card_size_lg {
+  grid-column: span 3;
+}
+
+.places__card_size_sm {
+  grid-column: span 2;
+}
+
+.places__card-pick {
+  width: 100%;
+  height: 354px;
+  object-fit: cover;
+  transition: 0.15s all;
+}
+
+.places__card-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+}
+
+.places__card_size_sm {
+  height: 283px;
+  object-fit: cover;
+}
+
+.places__card-pick_size_lg {
+  height: 354px;
+  object-fit: cover;
+}
+
+/* Places styles end*/
