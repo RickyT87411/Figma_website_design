@@ -53,6 +53,7 @@ body {
 .wrapper-full {
   max-width: 1260px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 .places__title {
   font-weight: 500;
@@ -274,10 +275,6 @@ fieldset {
 /*Benefits styles end*/
 
 /*Pleces styles start*/
-
-.wrapper-full {
-  padding: 0 20px;
-}
 
 .places {
   padding-bottom: 130px;
