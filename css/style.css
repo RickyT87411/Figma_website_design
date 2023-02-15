@@ -313,6 +313,7 @@ fieldset {
   position: relative;
   overflow: hidden;
   margin: 0;
+  padding: 0 20px;
 }
 
 .places__card:hover .places__card-pick {
