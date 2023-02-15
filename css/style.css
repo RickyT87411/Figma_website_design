@@ -365,3 +365,50 @@ fieldset {
 }
 
 /* Places styles end*/
+
+/* Tours styles start*/
+
+.tours {
+  padding-bottom: 140px;
+  padding: 0 20px;
+}
+
+.tours__tour {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0 110px;
+  align-items: center;
+  padding-bottom: 80px;
+}
+
+.tour__title {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+  padding-bottom: 85px;
+}
+
+.tour__info {
+  padding-left: 50px;
+}
+
+.tour__desc {
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 60px;
+}
+
+.tour__more {
+  font-size: 16px;
+  color: #006dfe;
+  text-decoration: none;
+  background: url("./img/Shape.svg") no-repeat right center;
+  padding-right: 60px;
+}
+
+.tour__more:hover,
+.tour__more:focus {
+  opacity: 0.65;
+}
+
+/* Tours styles end*/
