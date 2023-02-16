@@ -79,6 +79,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 99;
 }
 
 .header_active {
@@ -423,15 +424,14 @@ fieldset {
 }
 
 .top__title {
-  padding-bottom: 55px;
+  padding-bottom: 10px;
+  position: relative;
 }
-/*Это стиль должен дать синюю полоску 
-под заголовком top__title, но она почему-то 
-вылезает в header сразу под формой поиска */
+
 .top__title::after {
   display: block;
   content: "";
-  width: 255px;
+  width: 150px;
   height: 3px;
   background-color: #006dfe;
   position: absolute;
@@ -443,7 +443,7 @@ fieldset {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 60px;
-  padding: 0 20px;
+  padding: 20px 0 20px 20px;
 }
 
 .top__card-pick {
