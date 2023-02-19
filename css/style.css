@@ -518,15 +518,22 @@ fieldset {
 
 /*Footer styles start*/
 .video {
-  width: 100%;
   position: relative;
   width: 100%;
   height: 0;
   padding-bottom: 56.25%;
-  background-color: #000;
+  background-color: #000000;
 }
 
-.videos__media {
+.video__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video__media {
   position: absolute;
   top: 0;
   left: 0;
@@ -539,20 +546,13 @@ fieldset {
   position: absolute;
   top: 50%;
   left: 50%;
+  z-index: 1;
   padding: 0;
-  width: 70px;
+  width: 68px;
   height: 48px;
   border: none;
   background-color: transparent;
   transform: translate(-50%, -50%);
-  outline: none;
-}
-
-.video--enabled .video__button {
-  display: block;
-}
-
-.video--enabled {
   cursor: pointer;
 }
 
@@ -561,14 +561,28 @@ fieldset {
   fill-opacity: 0.8;
 }
 
+.video__button-icon {
+  fill: #ffffff;
+}
+
+.video__button:focus {
+  outline: none;
+}
+
 .video:hover .video__button-shape,
 .video__button:focus .video__button-shape {
-  fill: #f00;
+  fill: #ff0000;
   fill-opacity: 1;
 }
 
-.video__button-icon {
-  fill: #fff;
+/* Enabled */
+
+.video--enabled {
+  cursor: pointer;
+}
+
+.video--enabled .video__button {
+  display: block;
 }
 
 /*.video__item {
