@@ -546,7 +546,6 @@ fieldset {
   background-color: transparent;
   transform: translate(-50%, -50%);
   outline: none;
-  display: none;
 }
 
 .video--enabled .video__button {
