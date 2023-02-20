@@ -674,6 +674,7 @@ fieldset {
     z-index: 10;
     padding: 75px;
     transform: translateX(100%);
+    box-sizing: border-box;
   }
   .header__nav_active {
     transform: translateX(0);
