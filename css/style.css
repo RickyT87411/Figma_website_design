@@ -662,18 +662,27 @@ fieldset {
 /* Media start */
 
 @media screen and (max-width: 960px) {
+  .benefits {
+    padding-bottom: 75px;
+  }
+
+  .benefits__card {
+    margin-bottom: 60px;
+  }
+
   .benefits__title {
     padding: 55px 15px;
   }
   .search-form__field {
-    margin-bottom: 25px;
+    margin-bottom: 35px;
   }
 
   .benefits__cards {
     padding: 40px 15px;
     grid-column-gap: 35px;
   }
-  .benefits__card-more {
+  .benefits__wrap {
+    box-shadow: none;
   }
 }
 
