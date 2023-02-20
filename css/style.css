@@ -251,7 +251,7 @@ fieldset {
 }
 
 .benefits__title {
-  width: 84.2%;
+  width: 100%;
   font-weight: 500;
   font-size: 3rem;
   line-height: 3rem;
@@ -660,6 +660,23 @@ fieldset {
 /*Footer styles end*/
 
 /* Media start */
+
+@media screen and (max-width: 960px) {
+  .benefits__title {
+    padding: 55px 15px;
+  }
+  .search-form__field {
+    margin-bottom: 25px;
+  }
+
+  .benefits__cards {
+    padding: 40px 15px;
+    grid-column-gap: 35px;
+  }
+  .benefits__card-more {
+  }
+}
+
 @media screen and (max-width: 770px) {
   .header__burger {
     display: block;
