@@ -48,6 +48,7 @@ body {
 .wrapper {
   max-width: 1060px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .wrapper-full {
@@ -127,6 +128,33 @@ img {
 .header__link:focus,
 .header__link:active {
   opacity: 0.75;
+}
+
+.header__burger {
+  width: 50px;
+  height: 30px;
+  position: relative;
+  left: 0;
+  display: none;
+}
+
+.burger__first {
+  top: 0;
+}
+.burger__third {
+  bottom: 0;
+}
+.burger__second {
+  transform: translate(50% 50%);
+  top: 50%;
+}
+
+.burger__line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
 }
 /*Header styles end*/
 
@@ -585,18 +613,6 @@ fieldset {
   display: block;
 }
 
-/*.video__item {
-  padding-top: 56.25%;
-}
-
-.video__element {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}*/
-
 .footer {
   background: #0e1d28;
   padding: 120px;
@@ -642,3 +658,67 @@ fieldset {
   opacity: 0.85%;
 }
 /*Footer styles end*/
+
+/* Media start */
+@media screen and (max-width: 770px) {
+  .header__burger {
+    display: block;
+  }
+  .header__nav {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    z-index: 10;
+    padding: 75px;
+    transform: translateX(100%);
+    box-sizing: border-box;
+  }
+  .header__nav_active {
+    transform: translateX(0);
+    transition: 1s all linear;
+  }
+
+  .header__item {
+    width: 100%;
+    margin-right: 0;
+    padding-bottom: 30px;
+  }
+
+  .header__item:last-child {
+    padding-bottom: 0;
+  }
+
+  .header__link {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .header__nav-close {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 20;
+  }
+
+  .header__nav-close-line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+  }
+  .header__nav-close-line:first-child {
+    transform: translateY(-50%) rotate(45deg);
+  }
+  .header__nav-close-line:last-child {
+    transform: translateY(-50%) rotate(-45deg);
+  }
+}
+
+/* Media end */
