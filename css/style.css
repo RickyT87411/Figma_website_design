@@ -739,6 +739,7 @@ fieldset {
     position: absolute;
     top: 50%;
   }
+
   .header__nav-close-line:first-child {
     transform: translateY(-50%) rotate(45deg);
   }
