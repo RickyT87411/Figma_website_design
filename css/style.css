@@ -273,6 +273,8 @@ fieldset {
 .benefits__card {
   grid-column: span 1;
   margin-bottom: 110px;
+  display: flex;
+  flex-direction: column;
 }
 
 .benefits__card-pick {
@@ -302,6 +304,8 @@ fieldset {
   line-height: 2rem;
   color: #006dfe;
   text-decoration: none;
+  margin-top: auto;
+  width: fit-content;
 }
 
 /*Benefits styles end*/
@@ -664,10 +668,6 @@ fieldset {
 @media screen and (max-width: 960px) {
   .benefits {
     padding-bottom: 75px;
-  }
-
-  .benefits__card {
-    margin-bottom: 60px;
   }
 
   .benefits__title {
