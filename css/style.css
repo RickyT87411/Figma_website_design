@@ -273,6 +273,8 @@ fieldset {
 .benefits__card {
   grid-column: span 1;
   margin-bottom: 110px;
+  display: flex;
+  flex-direction: column;
 }
 
 .benefits__card-pick {
@@ -302,6 +304,8 @@ fieldset {
   line-height: 2rem;
   color: #006dfe;
   text-decoration: none;
+  margin-top: auto;
+  width: fit-content;
 }
 
 /*Benefits styles end*/
@@ -662,18 +666,23 @@ fieldset {
 /* Media start */
 
 @media screen and (max-width: 960px) {
+  .benefits {
+    padding-bottom: 75px;
+  }
+
   .benefits__title {
     padding: 55px 15px;
   }
   .search-form__field {
-    margin-bottom: 25px;
+    margin-bottom: 35px;
   }
 
   .benefits__cards {
     padding: 40px 15px;
     grid-column-gap: 35px;
   }
-  .benefits__card-more {
+  .benefits__wrap {
+    box-shadow: none;
   }
 }
 
@@ -730,6 +739,7 @@ fieldset {
     position: absolute;
     top: 50%;
   }
+
   .header__nav-close-line:first-child {
     transform: translateY(-50%) rotate(45deg);
   }
