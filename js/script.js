@@ -65,20 +65,13 @@ menuBurger();
 
 // Scroll to anchors
 
-/*const articles = document.querySelector("#articles");
-const link = document.querySelector('a[href="#articles"]');
-link.addEventListener("click", (event) => {
-  event.preventDefault();
-  articles.scrollIntoView({ behavior: "smooth" });
-});*/
-
 const scrollLink = ["articles", "locations", "videos", "sign-in"];
 
 scrollLink.forEach((el) => {
-  const link = document.querySelector(".header__link");
-  const byId = document.querySelector(".js-scroll");
+  const link = document.querySelector(`a[href="#${el}"]`);
+  const content = document.querySelector(`#${el}`);
   link.addEventListener("click", (event) => {
     event.preventDefault();
-    byId.scrollIntoView({ behavior: "smooth" });
+    content.scrollIntoView({ behavior: "smooth" });
   });
 });
