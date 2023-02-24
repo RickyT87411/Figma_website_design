@@ -139,47 +139,47 @@ const video = document.getElementById("sign-in");
 const top = document.getElementById("locations");
 const intro = document.getElementById("videos");
 const tours = document.getElementById("articles");
+const scroll = document.querySelectorAll("js-scroll");
 
-video.scrollIntoView();
-video.scrollIntoView(false);
-video.scrollIntoView({
-  block: "end",
+scroll.addEventListener("click", function () {
+  video.scrollIntoView();
+  video.scrollIntoView(false);
+  video.scrollIntoView({
+    block: "end",
+  });
+  video.scrollIntoView({
+    behavior: "smooth",
+  });
 });
-video.scrollIntoView({
-  behavior: "smooth",
-  block: "end",
-  inline: "nearest",
-});
-
-top.scrollIntoView();
-top.scrollIntoView(false);
-top.scrollIntoView({
-  block: "end",
-});
-top.scrollIntoView({
-  behavior: "smooth",
-  block: "end",
-  inline: "nearest",
-});
-
-intro.scrollIntoView();
-intro.scrollIntoView(false);
-intro.scrollIntoView({
-  block: "end",
-});
-intro.scrollIntoView({
-  behavior: "smooth",
-  block: "end",
-  inline: "nearest",
+scroll.addEventListener("click", function () {
+  top.scrollIntoView();
+  top.scrollIntoView(false);
+  top.scrollIntoView({
+    block: "end",
+  });
+  top.scrollIntoView({
+    behavior: "smooth",
+  });
 });
 
-tours.scrollIntoView();
-tours.scrollIntoView(false);
-tours.scrollIntoView({
-  block: "end",
+scroll.addEventListener("click", function () {
+  intro.scrollIntoView();
+  intro.scrollIntoView(false);
+  intro.scrollIntoView({
+    block: "end",
+  });
+  intro.scrollIntoView({
+    behavior: "smooth",
+  });
 });
-tours.scrollIntoView({
-  behavior: "smooth",
-  block: "end",
-  inline: "nearest",
+
+scroll.addEventListener("click", function () {
+  tours.scrollIntoView();
+  tours.scrollIntoView(false);
+  tours.scrollIntoView({
+    block: "end",
+  });
+  tours.scrollIntoView({
+    behavior: "smooth",
+  });
 });
