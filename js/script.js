@@ -64,7 +64,7 @@ const menuBurger = () => {
 menuBurger();
 
 // Scroll to anchors
-(function () {
+/*(function () {
   const smoothScroll = function (targetEl, duration) {
     const headerElHeight = document.querySelector(".header").clientHeight;
     let target = document.querySelector(targetEl);
@@ -99,4 +99,87 @@ menuBurger();
     });
   };
   scrollTo();
-})();
+})();*/
+
+/*const video = document.getElementById("#sign-in");
+const top = document.getElementById("#locations");
+const intro = document.getElementById("#videos");
+const tours = document.getElementById("#articles");
+
+const videoBlock = document.querySelector("video");
+const topBlock = document.querySelector("top");
+const introBlock = document.querySelector("intro");
+const toursBlock = document.querySelector("tours");
+
+videoBlock.addEventListener("click", function () {
+  video.scrollIntoView({
+    behavior: "smooth",
+  });
+});
+
+topBlock.addEventListener("click", function () {
+  top.scrollIntoView({
+    behavior: "smooth",
+  });
+});
+
+introBlock.addEventListener("click", function () {
+  intro.scrollIntoView({
+    behavior: "smooth",
+  });
+});
+
+toursBlock.addEventListener("click", function () {
+  tours.scrollIntoView({
+    behavior: "smooth",
+  });
+});*/
+
+const video = document.getElementById("sign-in");
+const top = document.getElementById("locations");
+const intro = document.getElementById("videos");
+const tours = document.getElementById("articles");
+
+video.scrollIntoView();
+video.scrollIntoView(false);
+video.scrollIntoView({
+  block: "end",
+});
+video.scrollIntoView({
+  behavior: "smooth",
+  block: "end",
+  inline: "nearest",
+});
+
+top.scrollIntoView();
+top.scrollIntoView(false);
+top.scrollIntoView({
+  block: "end",
+});
+top.scrollIntoView({
+  behavior: "smooth",
+  block: "end",
+  inline: "nearest",
+});
+
+intro.scrollIntoView();
+intro.scrollIntoView(false);
+intro.scrollIntoView({
+  block: "end",
+});
+intro.scrollIntoView({
+  behavior: "smooth",
+  block: "end",
+  inline: "nearest",
+});
+
+tours.scrollIntoView();
+tours.scrollIntoView(false);
+tours.scrollIntoView({
+  block: "end",
+});
+tours.scrollIntoView({
+  behavior: "smooth",
+  block: "end",
+  inline: "nearest",
+});
