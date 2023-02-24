@@ -407,8 +407,7 @@ fieldset {
 /* Tours styles start*/
 
 .tours {
-  padding-bottom: 140px;
-  padding: 0 20px;
+  padding: 0 20px 140px 20px;
 }
 
 .tours__tour {
@@ -425,11 +424,9 @@ fieldset {
   line-height: 3rem;
   padding-bottom: 85px;
 }
-
 .tour__info {
-  padding-left: 50px;
+  padding: 0 50px;
 }
-
 .tour__desc {
   font-size: 1rem;
   line-height: 2rem;
@@ -877,9 +874,6 @@ fieldset {
   .footer__nav {
     width: 100%;
   }
-  /*.footer__menu {
-    width: 50%;
-  }*/
 }
 
 @media screen and (max-width: 500px) {
