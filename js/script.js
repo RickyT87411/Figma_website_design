@@ -75,3 +75,34 @@ scrollLink.forEach((el) => {
     content.scrollIntoView({ behavior: "smooth" });
   });
 });
+
+// Modal
+
+/*let modal = $modal({
+  title: "Tottori",
+  content: "<p>Jump off balcony, onto strangers head. Chase ball of string</p>",
+});
+
+document.querySelector(".show-modal").addEventListener("click", function (e) {
+  modal.show();
+});*/
+
+/*const btn = document.querySelector("btn");
+const modals = document.querySelector(".modals");
+btn.forEach((el) => {
+  el.addEventListener("click", (e) => {
+    let path = e.currentTarget.getAttribute("data-path");
+    modals.getElementsByClassName.display = "block";
+    document.querySelector(`[data-target="${path}"]`);
+  });
+});*/
+
+const btns = document.querySelectorAll(".btn");
+const modalOverlay = document.querySelector(".modal__overlay");
+
+btns.forEach((el) => {
+  el.addEventListener("click", (e) => {
+    let path = e.currentTarget.getAttribute("data-path");
+    modalOverlay.classList.add("modals__overlay--visible");
+  });
+});
