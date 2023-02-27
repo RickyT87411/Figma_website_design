@@ -440,6 +440,31 @@ fieldset {
 .pop_up.active {
   display: block;
 }
+.open__block {
+  background-color: #fff;
+  height: 500px;
+  width: 500px;
+  text-align: center;
+  font-family: initial;
+}
+
+.open__block_title {
+  padding: 30px;
+}
+
+.open__block_deck {
+  padding: 30px;
+}
+.open__block_btn {
+  height: 50px;
+  width: 150px;
+  background-color: orange;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  margin-top: 70px;
+}
+
 /*Modal end*/
 
 /* Tours styles start*/
