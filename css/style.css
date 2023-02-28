@@ -54,7 +54,6 @@ body {
 .wrapper-full {
   max-width: 1260px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 .places__title {
   font-weight: 500;
@@ -673,7 +672,6 @@ fieldset {
 .footer {
   background: #0e1d28;
   padding: 120px;
-  margin: 0 20px;
 }
 
 .footer__item {
