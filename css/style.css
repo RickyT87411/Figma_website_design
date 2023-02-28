@@ -408,13 +408,6 @@ fieldset {
 
 .button {
   margin-top: 40px;
-  text-align: center;
-}
-.button a {
-  background-color: #fff;
-  padding: 20px 50px;
-  border-radius: 10px;
-  text-decoration: none;
 }
 
 .pop_up {
@@ -434,27 +427,18 @@ fieldset {
 }
 
 .pop_up_body {
+  background-color: #fff;
+  height: 500px;
+  width: 500px;
   margin: auto;
-  position: relative;
+  text-align: center;
+  font-family: initial;
+  padding-top: 100px;
 }
 .pop_up.active {
   display: block;
 }
-.open__block {
-  background-color: #fff;
-  height: 500px;
-  width: 500px;
-  text-align: center;
-  font-family: initial;
-}
 
-.open__block_title {
-  padding: 30px;
-}
-
-.open__block_deck {
-  padding: 30px;
-}
 .open__block_btn {
   height: 50px;
   width: 150px;
