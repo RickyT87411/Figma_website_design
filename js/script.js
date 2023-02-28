@@ -78,52 +78,6 @@ scrollLink.forEach((el) => {
 
 // Modal
 
-/*let modal = $modal({
-  title: "Tottori",
-  content: "<p>Jump off balcony, onto strangers head. Chase ball of string</p>",
-});
-
-document.querySelector(".show-modal").addEventListener("click", function (e) {
-  modal.show();
-});*/
-
-/*const btn = document.querySelector("btn");
-const modals = document.querySelector(".modals");
-btn.forEach((el) => {
-  el.addEventListener("click", (e) => {
-    let path = e.currentTarget.getAttribute("data-path");
-    modals.getElementsByClassName.display = "block";
-    document.querySelector(`[data-target="${path}"]`);
-  });
-});*/
-
-/*const btns = document.querySelectorAll(".btn");
-const modalOverlay = document.querySelector(".modal__overlay");
-const modals = document.querySelectorAll(".modal__open");
-
-btns.forEach((el) => {
-  el.addEventListener("click", (e) => {
-    let path = e.currentTarget.getAttribute("data-path");
-
-    modals.forEach((el) => {
-      el.classList.remove(".modal__open");
-    });
-
-    document
-      .querySelector(`[data-target="${path}"]`)
-      .classList.add(".modal__open");
-    modalOverlay.classList.add("modals__overlay--visible");
-  });
-});
-
-modalOverlay.addEventListener("click", (e) => {
-  modals.forEach((el) => {
-    el.classList.remove(".modal__open");
-  });
-
-  modalOverlay.classList.remove("modals__overlay--visible");
-});*/
-
 const openPopUp = document.querySelector(".open_pop_up");
 const closePopUp = document.querySelector(".pop_up_close");
 const popUp = document.querySelector(".pop_up");
