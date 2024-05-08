@@ -10,13 +10,13 @@ const headerActive = () => {
 };
 headerActive();
 
-function findVideos() {
-  let videos = document.querySelectorAll(".video");
+// function findVideos() {
+//   let videos = document.querySelectorAll(".video");
 
-  for (let i = 0; i < videos.length; i++) {
-    setupVideo(videos[i]);
-  }
-}
+//   for (let i = 0; i < videos.length; i++) {
+//     setupVideo(videos[i]);
+//   }
+// }
 
 // function setupVideo(video) {
 //   let link = video.querySelector(".video__link");
@@ -55,11 +55,11 @@ const menuBurger = () => {
   const menu = document.querySelector(".header__nav");
   const menuCloseItem = document.querySelector(".header__nav-close");
   burgerItem.addEventListener("click", () => {
-    menu.classList.add("header__nav_active");
-  });
-  menuCloseItem.addEventListener("click", () =>
-    menu.classList.remove("header__nav_active")
-  );
+  //   menu.classList.add("header__nav_active");
+  // });
+  // menuCloseItem.addEventListener("click", () =>
+  //   menu.classList.remove("header__nav_active")
+  // );
 };
 menuBurger();
 
@@ -82,10 +82,10 @@ const openPopUp = document.querySelector(".open_pop_up");
 // const closePopUp = document.querySelector(".pop_up_close");
 // const popUp = document.querySelector(".pop_up");
 
-// openPopUp.addEventListener("click", function (e) {
-//   e.preventDefault();
-//   popUp.classList.add("active");
-// });
+openPopUp.addEventListener("click", function (e) {
+  e.preventDefault();
+  // popUp.classList.add("active");
+});
 
 closePopUp.addEventListener("click", () => {
   popUp.classList.remove("active");
