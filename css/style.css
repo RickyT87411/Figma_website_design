@@ -315,13 +315,13 @@ fieldset {
   padding-bottom: 130px;
 }
 
-.places__caption {
+/* .places__caption {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 35px;
-}
+} */
 
 .places__title {
   margin-right: 15px;
@@ -815,14 +815,14 @@ fieldset {
     line-height: 3rem;
   }
 
-  .header__nav-close {
+  /* .header__nav-close {
     width: 40px;
     height: 40px;
     position: absolute;
     top: 20px;
     right: 20px;
     z-index: 20;
-  }
+  } */
 
   .header__nav-close-line {
     display: block;
