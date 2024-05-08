@@ -315,13 +315,13 @@ fieldset {
   padding-bottom: 130px;
 }
 
-.places__caption {
+/* .places__caption {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 35px;
-}
+} */
 
 .places__title {
   margin-right: 15px;
