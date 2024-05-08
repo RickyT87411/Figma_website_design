@@ -10,13 +10,13 @@ const headerActive = () => {
 };
 headerActive();
 
-function findVideos() {
-  let videos = document.querySelectorAll(".video");
+// function findVideos() {
+//   let videos = document.querySelectorAll(".video");
 
-  for (let i = 0; i < videos.length; i++) {
-    setupVideo(videos[i]);
-  }
-}
+//   for (let i = 0; i < videos.length; i++) {
+//     setupVideo(videos[i]);
+//   }
+// }
 
 function setupVideo(video) {
   let link = video.querySelector(".video__link");
