@@ -269,12 +269,12 @@ fieldset {
   padding: 50px 100px;
 }
 
-.benefits__card {
+/* .benefits__card {
   grid-column: span 1;
   margin-bottom: 110px;
   display: flex;
   flex-direction: column;
-}
+} */
 
 .benefits__card-pick {
   max-width: 65px;
@@ -296,7 +296,7 @@ fieldset {
   line-height: 2rem;
   margin-bottom: 40px;
 }
-
+/* 
 .benefits__card-more {
   display: inline-block;
   font-size: 1rem;
@@ -305,7 +305,7 @@ fieldset {
   text-decoration: none;
   margin-top: auto;
   width: fit-content;
-}
+} */
 
 /*Benefits styles end*/
 
@@ -315,13 +315,13 @@ fieldset {
   padding-bottom: 130px;
 }
 
-/* .places__caption {
+.places__caption {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 35px;
-} */
+}
 
 .places__title {
   margin-right: 15px;
