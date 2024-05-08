@@ -18,20 +18,20 @@ function findVideos() {
   }
 }
 
-function setupVideo(video) {
-  let link = video.querySelector(".video__link");
-  let media = video.querySelector(".video__media");
-  let button = video.querySelector(".video__button");
-  let id = link.dataset.id;
-  video.addEventListener("click", () => {
-    let iframe = createIframe(id);
-    link.remove();
-    button.remove();
-    video.appendChild(iframe);
-  });
-  link.removeAttribute("href");
-  video.classList.add("video--enabled");
-}
+// function setupVideo(video) {
+//   let link = video.querySelector(".video__link");
+//   let media = video.querySelector(".video__media");
+//   let button = video.querySelector(".video__button");
+//   let id = link.dataset.id;
+//   video.addEventListener("click", () => {
+//     let iframe = createIframe(id);
+//     link.remove();
+//     button.remove();
+//     video.appendChild(iframe);
+//   });
+//   link.removeAttribute("href");
+//   video.classList.add("video--enabled");
+// }
 
 function createIframe(id) {
   let iframe = document.createElement("iframe");
@@ -79,14 +79,14 @@ scrollLink.forEach((el) => {
 // Modal
 
 const openPopUp = document.querySelector(".open_pop_up");
-const closePopUp = document.querySelector(".pop_up_close");
-const popUp = document.querySelector(".pop_up");
+// const closePopUp = document.querySelector(".pop_up_close");
+// const popUp = document.querySelector(".pop_up");
 
 openPopUp.addEventListener("click", function (e) {
   e.preventDefault();
   popUp.classList.add("active");
 });
 
-closePopUp.addEventListener("click", () => {
-  popUp.classList.remove("active");
-});
+// closePopUp.addEventListener("click", () => {
+//   popUp.classList.remove("active");
+// });
